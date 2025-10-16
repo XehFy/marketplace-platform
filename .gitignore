@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+
+# Virtual environments
+services/*/.venv/
+.env
+
+# PyCharm
+.idea/
+*.iml
+
+# Docker
+*.log
