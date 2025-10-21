@@ -9,6 +9,6 @@ from httpx import ASGITransport
 async def test_ping():
     transport = ASGITransport(app=app)
     async with AsyncClient(transport=transport, base_url="http://test") as ac:
-        response = await ac.get("/ping")
+        response = await ac.get("auth/ping")
     assert response.status_code == 200
-    assert response.json() == {"message": "pong"}
+    assert response.json() == {"status": "ok"}

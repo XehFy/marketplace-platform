@@ -1,8 +1,12 @@
 fastapi
-uvicorn
+uvicorn[standard]
 python-jose
 passlib[bcrypt]
 pydantic[email]
 pytest
-httpx
 pytest-asyncio
+httpx
+sqlalchemy>=2.0
+asyncpg
+alembic
+psycopg2-binary
