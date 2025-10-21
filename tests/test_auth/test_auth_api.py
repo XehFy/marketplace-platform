@@ -2,7 +2,7 @@ import pytest
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
 from unittest.mock import AsyncMock, patch
-from services.auth.routes import router
+from auth.routes import router
 
 app = FastAPI()
 app.include_router(router)
